@@ -3,6 +3,7 @@
 	padding: 0;
 	text-decoration: none;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -46,6 +47,11 @@ body {
 
 .header-nav__list li:not(last-child) {
 	margin-right: 42px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
 }
 
 li a {
@@ -374,7 +380,7 @@ h3 {
 
 }
 
-.sites {
+.sites ul {
 	margin-left: 328px;
 	display: flex;
 	flex-direction: row;
