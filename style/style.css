@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: #a4a5a6;
+	 scroll-behavior: smooth;
+}
+.header-wrapper{
+	display: flex;
+justify-content: space-between;
+flex-direction: column;
+gap: 20px;
+}
+.wrapper {
+	max-width: 1440px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 50px 0;
+}
+.logo-header p{
+	border: 1px solid #545657;
+	padding: 8px;
+}
+.header-container-light img {
+	width: 250px;
+	border: none;
+	border-radius: 50px;
+	display: block;
+	margin: auto;
+}
+
+h1 {
+	color: #a4a5a6;
+	font-weight: 400;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+#occupation {
+	color: #a4a5a6;
+	font-weight: 400;
+	margin-bottom: 110px;
+}
+
+h2 {
+	color: #a4a5a6;
+	font-weight: 500;
+}
+
+.underlined {
+	width: 100%;
+	height: 1px;
+	background: #a4a5a6;
+	margin-bottom: 20px;
+}
+
+.contact-details {
+	display: flex;
+	justify-content: space-between;
+	gap: 35px;
+	flex-wrap: wrap;
+}
+.contact-details li{
+	list-style-type: none;
+}
+.orange {
+	color: #e0a80d;
+}
+
+h3 {
+	color: #a4a5a6;
+	font-weight: 400;
+}
+
+.contact-detail,
+.contact-detail a {
+	font-size: 14px;
+	color: #a4a5a6;
+	font-weight: 400;
+}
+
+.contact-detail a {
+	color: #e0a80d;
+	transition: 0.3s;
+}
+
+.contact-detail a:hover {
+	color: #bf8f0b;
+}
+
+.education,
+.skills,
+.works {
+	padding: 15px 0;
+
+}
+
+.education-wrapper,
+.wrapper-about,
+.wrapper-skills,
+.code-wrapper,
+.wrapper-works,
+.language-wrapper,
+.header-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 150px;
+}
+
+
+.education__block {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.document-title,
+.about-title,
+.skills-title,
+.code-title,
+.works-title,
+.language-title {
+	text-align: right;
+	font-size: 20px;
+}
+
+.education__date {
+	font-weight: 500;
+}
+
+.education__block {
+	margin-bottom: 8px;
+}
+
+.about,
+.code,
+.language {
+	padding: 15px 0;
+
+}
+
+.skills-list {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	text-align: center;
+}
+
+.skills-list li:nth-child(odd) {
+	color: #e0a80d;
+}
+
+#code {
+	font-size: 14px;
+}
+
+.works-block,
+.languages-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.works-block a {
+	color: #e0a80d;
+	transition: 0.3s;
+}
+
+.works-block a:hover {
+	color: #bf8f0b;
+}
+
+.language-block {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 7px;
+}
+
+.language-block p {
+	color: #e0a80d;
+	vertical-align: super;
+	font-size: 14px;
+}
+
+footer {
+	padding: 40px 0;
+	background-color: rgb(30, 30, 30);
+}
+
+.site-links {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.github a img {
+	width: 40px;
+}
+
+.rsschool a img {
+	width: 100px;
+}
+
+.year {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.about,
+.code,
+.language,
+header {
+
+	background: -webkit-linear-gradient(90deg, rgb(45, 47, 46) 33%, rgb(52, 52, 52) 66%);
+	background: -moz-linear-gradient(90deg, rgb(45, 47, 46) 33%, rgb(52, 52, 52) 66%);
+	background: linear-gradient(90deg, rgb(45, 47, 46) 33%, rgb(52, 52, 52) 66%);
+}
+
+.education,
+.skills,
+.works {
+
+	background: -webkit-linear-gradient(90deg, rgb(52, 52, 52) 33%, rgb(45, 47, 46) 66%);
+	background: -moz-linear-gradient(90deg, rgb(52, 52, 52) 33%, rgb(45, 47, 46) 66%);
+	background: linear-gradient(90deg, rgb(52, 52, 52) 33%, rgb(45, 47, 46) 66%);
+}
+.nav-cv-list{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.nav-cv-list li a{
+	cursor: pointer;
+	transition: 0.3s;
+}
+.nav-cv-list li a:hover{
+	color: #e0a80d;
+}
+.header-nav{
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+/*Adaptive*/
+
+@media (max-width:940px) {
+
+	.education-wrapper,
+	.wrapper-about,
+	.wrapper-skills,
+	.code-wrapper,
+	.wrapper-works,
+	.language-wrapper,
+	.header-content{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-column-gap: 150px;
+	}
+
+}
+
+@media (max-width:842px) {
+	.header-container-light img {
+		width: 200px;
+	}
+
+	.education-wrapper,
+	.wrapper-about,
+	.wrapper-skills,
+	.code-wrapper,
+	.wrapper-works,
+	.language-wrapper,
+	.header-content {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-column-gap: 50px;
+	}
+
+}
+
+@media (max-width:700px) {
+	.header-container-light img {
+		width: 150px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	.document-title,
+	.about-title,
+	.skills-title,
+	.code-title,
+	.works-title,
+	.language-title {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width:650px) {
+
+	.education-wrapper,
+	.wrapper-about,
+	.wrapper-skills,
+	.code-wrapper,
+	.wrapper-works,
+	.language-wrapper,
+	.header-content {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-column-gap: 30px;
+	}
+}
+
+@media (max-width:500px) {
+	.nav-cv{
+		display: none;
+	}
+	.header-container-light img {
+		width: 130px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.document-title,
+	.about-title,
+	.skills-title,
+	.code-title,
+	.works-title,
+	.language-title {
+		font-size: 16px;
+		text-align: left;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	#occupation {
+
+		margin-bottom: 40px;
+	}
+
+	.code-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.code-title {
+		text-align: center;
+	}
+
+	.wb-work,
+	.pixema-work {
+		text-align: center;
+	}
+
+	.skills-list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.skills-list li {
+		color: #e0a80d;
+	}
+}
+
+@media (max-width:390px) {
+	.header-container-light {
+		display: none;
+	}
+
+	.education-wrapper,
+	.wrapper-about,
+	.wrapper-skills,
+	.code-wrapper,
+	.wrapper-works,
+	.language-wrapper,
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.document-title,
+	.about-title,
+	.skills-title,
+	.code-title,
+	.works-title,
+	.language-title {
+		text-align: center;
+	}
+
+	#code {
+		font-size: 11px;
+	}
+}
