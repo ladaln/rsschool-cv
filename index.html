@@ -125,7 +125,7 @@ let second = 0;
 let interval;
 function startTimer() {
 	second++
-	if (second <= 9) {
+	if (second < 10) {
 		secondElement.innerText = "0" + second;
 	}
 	if (second > 9) {
@@ -138,7 +138,7 @@ function startTimer() {
 		secondElement.innerText = "0" + second;
 	}
 
-	if (minute <= 9) {
+	if (minute < 10) {
 		minuteElement.innerText = "0" + minute;
 	}
 	if (minute > 9) {
